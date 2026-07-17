@@ -1,0 +1,91 @@
+# ============================================================
+#  .gitignore — Análise de Dados
+#  Foco em planilhas, relatórios e dashboards
+# ============================================================
+
+
+# ----- Dados brutos e sensíveis -----------------------------
+# Nunca versione dados reais — podem conter informações confidenciais
+data/               # pasta principal de dados do projeto
+
+*.csv               # tabelas separadas por vírgula
+*.tsv               # tabelas separadas por tabulação
+*.xls               # planilha Excel (formato antigo, anterior ao 2007)
+*.xlsx              # planilha Excel (formato moderno padrão)
+*.xlsm              # planilha Excel com macros habilitadas
+*.ods               # planilha LibreOffice / OpenDocument
+*.parquet           # formato colunar binário (usado com pandas/polars)
+*.feather           # formato binário rápido para troca de DataFrames
+*.pickle            # objetos Python serializados (DataFrames, listas, etc.)
+*.pkl               # mesma coisa que .pickle, extensão alternativa
+*.json              # dados estruturados em JSON
+*.jsonl             # JSON com um registro por linha
+*.db                # banco de dados genérico
+*.sqlite            # banco de dados SQLite local
+*.sqlite3           # SQLite versão 3, extensão alternativa
+*.accdb             # banco de dados Microsoft Access (formato novo)
+*.mdb               # banco de dados Microsoft Access (formato antigo)
+
+
+# ----- Relatórios e exports ---------------------------------
+# Arquivos gerados automaticamente — devem ser reproduzíveis a partir do código
+reports/            # pasta de relatórios gerados
+exports/            # pasta de arquivos exportados
+output/             # pasta de saídas gerais
+
+*.pdf               # relatórios exportados em PDF
+*.html              # relatórios HTML gerados (ex: pandas-profiling, ydata)
+!templates/*.html   # EXCEÇÃO: templates HTML de relatórios (esses sim devem ser versionados)
+*.docx              # relatórios exportados em Word
+*.pptx              # apresentações geradas automaticamente
+
+
+# ----- Imagens e gráficos gerados ---------------------------
+# Plots são gerados pelo código — não precisam ficar no repositório
+figures/            # pasta de figuras e visualizações
+plots/              # pasta alternativa de gráficos
+
+*.png               # imagem PNG (formato mais comum para gráficos)
+*.jpg               # imagem JPEG
+*.jpeg              # imagem JPEG (extensão alternativa)
+*.gif               # imagem GIF (raramente usada em análises)
+*.svg               # imagem vetorial (Matplotlib, Plotly, etc.)
+
+
+# ----- Ambiente Python --------------------------------------
+.env                # variáveis de ambiente (senhas, strings de conexão, tokens)
+.venv/              # ambiente virtual Python criado com venv
+venv/               # ambiente virtual Python (nome alternativo comum)
+env/                # ambiente virtual Python (outro nome alternativo)
+__pycache__/        # cache de bytecode Python gerado automaticamente
+*.py[cod]           # arquivos compilados Python (.pyc, .pyo, .pyd)
+*.pyo               # bytecode Python otimizado (versões antigas)
+*.egg-info/         # metadados de pacote Python
+dist/               # pacotes de distribuição gerados pelo build
+build/              # arquivos temporários de compilação
+
+
+# ----- Notebooks --------------------------------------------
+.ipynb_checkpoints/ # checkpoints automáticos do Jupyter (salvamentos intermediários)
+*-checkpoint.ipynb  # arquivos de backup gerados automaticamente pelo Jupyter
+
+
+# ----- Power BI, Tableau e similares ------------------------
+*.pbix              # arquivo de projeto do Power BI (pode ter dados embutidos)
+*.twb               # arquivo de projeto do Tableau (sem dados)
+*.twbx              # arquivo empacotado do Tableau (com dados embutidos — pesado!)
+*.hyper             # extrato de dados do Tableau (formato de cache)
+*.tds               # fonte de dados do Tableau
+
+
+# ----- IDEs e editores --------------------------------------
+.vscode/            # configurações do Visual Studio Code (específicas da máquina)
+.idea/              # configurações do PyCharm / IntelliJ
+*.code-workspace    # arquivo de workspace do VS Code
+.DS_Store           # metadados de pastas do macOS (arquivo oculto)
+Thumbs.db           # cache de miniaturas gerado pelo Windows Explorer
+
+
+# ----- Logs -------------------------------------------------
+logs/               # pasta de logs de execução
+*.log               # arquivos de log em geral
