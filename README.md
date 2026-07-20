@@ -21,7 +21,11 @@ A solução foi implementada seguindo a arquitetura **Medallion**, garantindo a 
 *   **Versionamento:** Git e GitHub.
 
 # 🚀 Guia de Implementação
+
 Para replicar este ambiente, execute os passos abaixo:
+
+Clonar o repositório:
+git clone URL_DO_REPOSITORIO.
 
 1. **Requisitos:** Python 3.x, MySQL Server e as dependências listadas em `requirements.txt`.
 2. **Setup:** Configure as variáveis de ambiente em um arquivo `.env`:
