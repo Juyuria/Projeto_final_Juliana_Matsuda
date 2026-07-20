@@ -28,14 +28,13 @@ SELECT
 FROM raw_viagem;
 """
 
-# 2. Transformação PAGAMENTO
+# 2. Transformação PAGAMENTO - CORRIGIDO
 SQL_PAGAMENTO = """
 INSERT INTO silver_pagamento (
     id_viagem, num_proposta, nome_orgao_pagador, nome_ug_pagadora, tipo_pagamento, valor
 )
 SELECT 
-    identificadorProcessoViagem, numeroPropostaPcdp, nomeOrgaoPagador, 
-    nomeUnidadeGestoraPagadora, tipoPagamento,
+    id_viagem, num_proposta, nome_orgao_pagador, nome_ug, tipo_pagamento,
     CAST(REPLACE(REPLACE(NULLIF(TRIM(valor), ''), '.', ''), ',', '.') AS DECIMAL(10,2))
 FROM raw_pagamento;
 """

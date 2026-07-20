@@ -19,9 +19,16 @@ CREATE TABLE raw_viagem (
 );
 
 CREATE TABLE raw_pagamento (
-    id_viagem VARCHAR(255), num_proposta VARCHAR(255), cod_orgao_superior VARCHAR(255), 
-    nome_orgao_superior VARCHAR(255), cod_ug VARCHAR(255), nome_ug VARCHAR(255), 
-    tipo_pagamento VARCHAR(255), valor VARCHAR(255)
+    id_viagem VARCHAR(255), 
+    num_proposta VARCHAR(255), 
+    cod_orgao_superior VARCHAR(255), 
+    nome_orgao_superior VARCHAR(255), 
+    cod_orgao_pagador VARCHAR(255), 
+    nome_orgao_pagador VARCHAR(255), 
+    cod_ug VARCHAR(255), 
+    nome_ug VARCHAR(255), 
+    tipo_pagamento VARCHAR(255), 
+    valor VARCHAR(255)
 );
 
 CREATE TABLE raw_passagem (

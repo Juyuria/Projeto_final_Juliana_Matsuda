@@ -61,9 +61,9 @@ def executar_fase_1():
                 'valor_diarias', 'valor_passagens', 'valor_devolucao', 'valor_outros_gastos'
             ],
             'raw_pagamento': [
-                'id_viagem', 'num_proposta', 'cod_orgao_superior', 
-                'nome_orgao_superior', 'cod_ug', 'nome_ug', 
-                'tipo_pagamento', 'valor'
+               'id_viagem', 'num_proposta', 'cod_orgao_superior', 
+                'nome_orgao_superior', 'cod_orgao_pagador', 'nome_orgao_pagador', 
+                'cod_ug', 'nome_ug', 'tipo_pagamento', 'valor'
             ],
             'raw_passagem': [
                 'id_viagem', 'num_proposta', 'meio_transporte', 
