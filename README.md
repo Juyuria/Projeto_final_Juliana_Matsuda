@@ -1,9 +1,9 @@
 # Projeto Pipeline de Dados de Transparência Pública
 
 🎓 Contexto Acadêmico 
-Projeto desenvolvido para o curso de **Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)** do **SENAI - SCTEC**. Este repositório documenta a aplicação prática de engenharia de dados, modelagem de banco de dados e análise de informações estruturadas.
+Projeto desenvolvido para o curso de **Tecnologia em Análise de Dados** do **SENAI - SCTEC**. Este repositório documenta a aplicação prática de engenharia de dados, modelagem de banco de dados e análise de informações estruturadas.
 
-## 🎯 Objetivo do Projeto
+# 🎯 Objetivo do Projeto
 Estruturar um pipeline de dados (ETL) para consumir, tratar e analisar despesas de viagens a serviço do Governo Federal. A solução transforma dados públicos brutos do Portal da Transparência em inteligência de negócio, permitindo a auditoria e o monitoramento eficiente de gastos institucionais.
 
 ## 🛠 Arquitetura de Dados
@@ -20,7 +20,7 @@ A solução foi implementada seguindo a arquitetura **Medallion**, garantindo a 
 *   **Visualização:** Matplotlib e Seaborn.
 *   **Versionamento:** Git e GitHub.
 
-## 🚀 Guia de Implementação
+# 🚀 Guia de Implementação
 Para replicar este ambiente, execute os passos abaixo:
 
 1. **Requisitos:** Python 3.x, MySQL Server e as dependências listadas em `requirements.txt`.
@@ -54,7 +54,7 @@ As análises realizadas na camada Gold e Silver permitiram identificar os seguin
 7. **Órgão com maior custo (Silver)** → Ministério da Justiça (R$ 486,9 Mi)  
 
 
-🚀 Próximos Passos
+# 🚀 Próximos Passos
 Para a evolução da solução:
 
 Automação: Orquestração de cargas incrementais.
